@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  task-db:
+    image: postgres:9.4.7
+    environment:
+      POSTGRES_DB: task
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+    ports:
+      - 5433:5432
+
+
